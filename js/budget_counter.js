@@ -173,16 +173,16 @@ function calculate()
    first_value=(document.getElementById("inc_expense").innerHTML);
    res=first_value.replace('+','')
    // console.log(res)
-   document.getElementById("budget_value").innerHTML="₹"+res;
+   document.getElementById("budget_value").innerHTML=`${res}`;
 
    second_value=(document.getElementById("inc_expense1").innerHTML);
    res1=second_value.replace('-','')
    // console.log(res1);
-   document.getElementById("budget_value").innerHTML="₹"+res1;
+   document.getElementById("budget_value").innerHTML=`${res1}`;
    
 
-   overall="₹" + res-res1;
-   total_budget_data=document.getElementById("budget_value").innerHTML=overall;
+   overall=res-res1;
+   total_budget_data=document.getElementById("budget_value").innerHTML=`${overall}`;
    budget_cookie=(document.cookie="budget="+total_budget_data);
    console.log(budget_cookie);
    // document.getElementById("budget_value").innerHTML=budget_cookie[1];
