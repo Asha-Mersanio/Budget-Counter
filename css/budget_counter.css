@@ -72,11 +72,13 @@ h3
 .para 
 {
     color: #ffffffe6;
-    font-size: 17px;
-    width: 400px;
-/*    border: 1px solid red;*/
-    margin: auto;
-    padding-top: 7px;
+    width: auto;
+	padding-top: 12px;
+    text-align: center;
+    font-size: 8px;
+    margin: 0px 0px 0px 0px;
+    font-family: 'roboto';
+    letter-spacing: 1px;
 }
 .budget_value {
     width: 260px;
